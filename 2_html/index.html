@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./New folder/favicon.webp">
+    <title>Sample</title>
+</head>
+<body>
+    <h1>Sample Text</h1>
+    <h2>Sample Text</h2>
+    <h3>Sample Text</h3>
+    <h4>Sample Text</h4>
+    <h5>Sample Text</h5>
+    <h6>Sample Text</h6>
+
+    <p title="My company">123 is a web developer's site.</p>
+    <p title="John 'ShotGun' Nelson">John with single quotes</p>
+    <p>This is<sub> subscript</sub> and <sup>Superscript</sup></p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+    <a href="mailto:someone@example.com" title="Go to 1234 HTML section">Send email</a>
+    <a href="#1234" title="Go to 1234 HTML section">Send email</a>
+
+    <p id="1234">Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Dolores, provident eligendi odio repellendus esse, nobis animi nam, neque fuga odit deleniti sunt praesentium ut quae ipsum quidem. Repudiandae, voluptatibus odio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit.</em> Dolores, provident eligendi odio repellendus esse, nobis animi nam, neque fuga odit deleniti sunt praesentium ut quae ipsum quidem. Repudiandae, voluptatibus odio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur <a href="https://fdc-inc.com">FDCI Website</a>adipisicing elit. Dolores, provident eligendi odio repellendus esse, nobis animi nam, neque fuga odit deleniti sunt praesentium ut quae ipsum quidem. Repudiandae, voluptatibus odio.<a href="about.html" target="_blank">About</a></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, provident eligendi odio repellendus esse, nobis animi nam, neque fuga odit deleniti sunt praesentium ut quae ipsum quidem. Repudiandae, voluptatibus odio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, provident eligendi odio repellendus esse, nobis animi nam, neque fuga odit deleniti sunt praesentium ut quae ipsum quidem. Repudiandae, voluptatibus odio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, provident eligendi odio repellendus esse, nobis animi nam, neque fuga odit deleniti sunt praesentium ut quae ipsum quidem. Repudiandae, voluptatibus odio.</p>
+
+    <!-- Lists -->
+    <ul>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+    </ul>
+
+    <ol type="A">
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+    </ol>
+
+    <ol type="1" start="50">
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+        <li>Sample List Item</li>
+    </ol>
+
+    <ol type="1" start="50" style="list-style-type: none;padding-left: 16px;">
+        <li>51. Sample List Item</li>
+        <li>52. Sample List Item</li>
+        <li>53. Sample List Item</li>
+        <li>54. Sample List Item</li>
+        <li>55. Sample List Item</li>
+        <li>56. Sample List Item</li>
+    </ol>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joshua Pardorla</td>
+                <td>Sample@gmail.com</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Joshua Pardorla</td>
+                <td>Sample@gmail.com</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Joshua Pardorla</td>
+                <td>Sample@gmail.com</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <form action="process.php" method="POST">
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" placeholder="First Name">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="firstname">Last Name</label>
+            <input type="text" name="lastname">
+        </div>
+
+        <div>
+            <label for="firstname">Email</label>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <label for="firstname">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="firstname">Gender</label>
+            <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="undecided">Undecided</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="firstname">Age</label>
+            <input type="number" name="age" value="30">
+        </div>
+
+        <div>
+            <label for="firstname">Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <div>
+            <label for="firstname">tel</label>
+            <input type="tel" pattern="[0-9]*">
+            <input type="text" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+        </div>
+
+        <input type="submit" name="submit" value="submit">
+
+    </form>
+
+    <button>Click Me</button>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <br>
+
+    <img src="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/images/middle-box1-img1.jpg" alt="picture ni" width="200" height="300">
+
+    <img src="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/images/middle-box1-img1.jpg" alt="picture ni" width="200" height="300">
+
+    <figure>
+        <img src="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/images/middle-box1-img1.jpg" alt="picture ni" width="200" height="300">
+      
+        <figcaption>
+          A T-Rex on display in the Manchester University Museum.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/images/middle-box1-img1.jpg" alt="picture ni" width="200" height="300">
+      
+        <figcaption>
+          A T-Rex on display in the Manchester University Museum.
+        </figcaption>
+    </figure>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/images/our-work_nc.png">
+        <source media="(min-width: 465px)" srcset="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/images/middle-box1-img1.jpg">
+        <img src="https://fdc-inc.com/wp-content/themes/fortydegreecelsuis2023/nh_what_we_offer/images/systems_and_analysis.jpg">
+    </picture>
+
+    <br>
+
+    <a href="">
+        <img src="./test.jpeg" alt="picture ni" width="200" height="300">
+    </a>
+
+    <blockquote cite="www.youtube.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit molestias. Tenetur, dolores atque assumenda perferendis ex consectetur, facere autem quam voluptas tempore corrupti pariatur nisi, nulla perspiciatis aliquam corporis.
+    </blockquote>
+
+    <p>thw <abbr title="world wide web">www</abbr> is awesome</p>
+
+    <p><cite>fdc</cite> is awesome</p>
+
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="mp3.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+
+    <iframe src="about.html" name="iframe_a" title="Iframe Example"></iframe>
+    
+    <iframe src="https://fdc-inc.com/" name="iframe_a" title="Iframe Example"></iframe>
+
+    <iframe src="https://www.youtube.com" name="iframe_a" title="Iframe Example"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nfna15r4EXM?si=flAeN_ykaK0CSsOv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
