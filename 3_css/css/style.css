@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 
 q::before {
@@ -29,18 +30,126 @@ body {
 .t_center {
 	text-align: center;
 }
+.t_center a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s; /
+}
+
+.t_center a:hover {
+    transform: scale(1.1); 
+}
 
 header {
-	background: gray;
-	padding: 15px 15px;
+    background-color: #2c3e50; 
+    padding: 20px; 
+    color: #ecf0f1;
+    font-size: 30px; 
+    font-weight: bold; 
+    border-bottom: 2px solid #34495e; 
+}
+#banner {
+	display: flex;
+	align-items: center;
+	background-color: #f2f2f2;
+	padding: -100px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#banner figure {
+	flex: 1;
+	margin-right: 0px;
+}
+
+#banner figure img {
+	width: 500%;
+}
+
+.banner_info {
+	flex: 2;
+	padding: 10px;
+}
+
+.banner_info h3 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.banner_info p {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.banner_info {
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner_info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.banner_info p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.banner_info a {
+    display: inline-block;
+    background-color: #f0563d;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.banner_info a:hover {
+    background-color: #e0432b;
+	transform: scale(1.05); 
+}
+
+
+.c_orange {
+    color: #ff8c00;
+}
+
+.c_red {
+    color: #c0392b;
 }
 
 header h2 {
-	color: pink;
+    font-size: 28px;
+    color: #79bed1; 
+    margin-bottom: 20px;
+  
+}
+header h2 :hover {
+	color: #828c97; 
+	
 }
 
 header h2 span {
-	color: orange;
+    color: #c98474;
+   
+}
+
+header h2:hover,
+header h2 span:hover {
+    color: #828c97; 
 }
 
 .wrapper {
@@ -65,125 +174,101 @@ header h2 span {
 }
 
 #navigation ul li a {
-	padding: 0 10px;
-	font-size: 18px;
-	text-decoration: none;
-	color: white;
+    padding: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #dab5b5;
+    transition: font-size 0.3s; 
 }
 
 #navigation ul li a:hover {
-	color: orange;
-	text-decoration: underline;
+    color: orange;
+    text-decoration: underline;
+    font-size: 20px; 
 }
-
-#banner {
-	overflow: hidden;
-	position: relative;
-}
-
-#banner::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, .1);
-}
-
-#banner figure {}
-
-#banner figure img {
-	width: 100%;
-	height: 500px;
-	object-fit: cover;
-	object-position: bottom;
-}
-
-.banner_info {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #fff;
-	text-align: center;
-	width: 900px;
-	padding: 15px;
-	box-sizing: border-box;
-	max-width: 100%;
-}
-
-.banner_info h3 {
-	font-size: 35px;
-	margin-bottom: 20px;
-}
-
-.banner_info h3 span {
-	display: block;
-}
-
-.banner_info p {
-	font-size: 20px;
-}
-
-.banner_info a {
-	display: block;
-	width: 110px;
-	background: orange;
-	line-height: 50px;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 10px;
-	margin: 25px auto 0;
-}
-
 .banner_info a:hover {
-	background: #c79658;
+    background: #989693;
 }
 
 #Services_con {
-	padding: 45px 15px;
+    padding: 45px 15px;
 }
 
 #Services_con h3 {
-	font-size: 30px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Service Boxes */
 .service_boxes {
-	display: flex;
-	justify-content: space-between;
-	margin: 35px auto 0;
-	gap: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 35px;
 }
 
 .service_boxes section {
-	border: 2px solid orange;
-	width: 560px;
-	padding: 15px;
-	box-sizing: border-box;
+    border: 2px solid #e67e22;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service_boxes section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service_boxes section figure {
-	width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .service_boxes section figure img {
-	width: 100%;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.service_boxes section:hover figure img {
+    filter: brightness(90%);
 }
 
 .service_boxes section h3 {
-	margin: 10px 0 20px;
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
 }
 
-.service_boxes section p {}
+.service_boxes section p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
 
 .service_boxes section a {
-    display: block;
-    width: 110px;
-    background: orange;
-    line-height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e67e22;
     color: #fff;
     text-decoration: none;
-    border-radius: 10px;
-    margin: 25px auto 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+	margin: auto;
+}
+
+.service_boxes section a:hover {
+    background-color: #d35400;
 }
 
 #main_footer{
@@ -191,17 +276,21 @@ header h2 span {
     padding: 15px 15px;
 }
 
-.social_media{
+.social_media {
     position: fixed;
     top: 57px;
     right: 0;
-    width: 35px;
-    background: aqua;
+    width: 40px; 
+    background: hsl(211, 70%, 72%); 
     padding: 10px;
-    border-radius: 30px 0 0 30px;
+    border-radius: 25px; 
     display: flex;
     flex-direction: column;
-    row-gap: 4px;
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    z-index: 9999;
+    transition: background-color 0.3s; 
 }
 
 .social_media a{
@@ -220,7 +309,7 @@ header h2 span {
     width: 100%;
 }
 
-@media screen and (max-width: 1000px) { 
+/* @media screen and (max-width: 1000px) { 
 	.service_boxes{
 		flex-wrap: wrap;
 		justify-content: center;
@@ -244,7 +333,7 @@ header h2 span {
 		padding: 24px 15px;
 		text-align: center;
 		position: static;
-	}
+	} */
 
 	header{
 		text-align: center;
